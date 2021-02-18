@@ -3,11 +3,9 @@ import 'express-async-errors'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose'
 import path from 'path'
-import swaggerUi from 'swagger-ui-express'
 import cors from 'cors'
 
 import AppError from '@shared/errors/AppError'
-import * as swaggerDocument from '@shared/infra/documentation/swagger.json'
 
 import routes from '@shared/infra/http/routes';
 
@@ -25,7 +23,6 @@ mongoose.connect(
 
 const app = express()
 app.use(express.static(path.join(__dirname, '../', 'public')));
-app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 app.use(cors());
 app.use(express.json())
 app.use(routes);

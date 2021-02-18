@@ -1,0 +1,95 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Tophotel",
+        "description": "TUI test",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "host": "localhost:3333",
+    "basePath": "",
+    "tags": [
+        {
+            "name": "Tophotel",
+            "description": "API"
+        }
+    ],
+    "definitions": {
+        "countries": {}
+    },
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/cities": {
+            "get": {
+                "tags": [
+                    "cities"
+                ],
+                "summary": "Get all cities",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/countries"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "cities"
+                ],
+                "summary": "create a cities",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/countries"
+                        }
+                    }
+                }
+            }
+        },
+        "/countries": {
+            "get": {
+                "tags": [
+                    "countries"
+                ],
+                "summary": "Get all countries",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/countries"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "countries"
+                ],
+                "summary": "create a countries",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/countries"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

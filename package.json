@@ -11,7 +11,6 @@
     },
     "dependencies": {
         "@types/cors": "^2.8.10",
-        "@types/swagger-ui-express": "^4.1.2",
         "@typescript-eslint/parser": "^4.15.0",
         "amadeus": "^5.6.1",
         "axios": "^0.21.1",
@@ -21,8 +20,7 @@
         "express": "^4.17.1",
         "express-async-errors": "^3.1.1",
         "mongodb": "^3.6.4",
-        "mongoose": "^5.11.15",
-        "swagger-ui-express": "^4.1.6"
+        "mongoose": "^5.11.15"
     },
     "devDependencies": {
         "@types/express": "^4.17.11",
