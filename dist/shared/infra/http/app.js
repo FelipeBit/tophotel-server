@@ -9,8 +9,8 @@ const dotenv_1 = __importDefault(require("dotenv"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const path_1 = __importDefault(require("path"));
 const cors_1 = __importDefault(require("cors"));
-const AppError_1 = __importDefault(require("@shared/errors/AppError"));
-const routes_1 = __importDefault(require("@shared/infra/http/routes"));
+const AppError_1 = __importDefault(require("../../../shared/errors/AppError"));
+const routes_1 = __importDefault(require("../../../shared/infra/http/routes"));
 dotenv_1.default.config();
 const { MONGO_ATLAS_USER, MONGO_ATLAS_PASSWORD, MONGO_ATLAS_DB } = process.env;
 const mongoAtlasURI = `mongodb+srv://${MONGO_ATLAS_USER}:${MONGO_ATLAS_PASSWORD}@tui.upyog.mongodb.net/${MONGO_ATLAS_DB}?retryWrites=true&w=majority`;
@@ -20,6 +20,7 @@ app.use(express_1.default.static(path_1.default.join(__dirname, '../', 'public')
 app.use(cors_1.default());
 app.use(express_1.default.json());
 app.use(routes_1.default);
+app.use('/api', routes_1.default);
 app.use((error, request, response, next) => {
     if (error instanceof AppError_1.default) {
         return response.status(error.statusCode).json({

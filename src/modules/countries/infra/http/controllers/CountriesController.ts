@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 
-import CreateCountriesService from '@modules/countries/services/CreateCountriesService'
-import ListCountriesService from '@modules/countries/services/ListCountriesService'
+import CreateCountriesService from '../../../../../modules/countries/services/CreateCountriesService'
+import ListCountriesService from '../../../../../modules/countries/services/ListCountriesService'
 
 export default class CountriesController {
     public async create(request: Request, response: Response): Promise<Response> {

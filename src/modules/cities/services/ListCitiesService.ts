@@ -1,5 +1,6 @@
-import CitiesRepository from '@modules/cities/repositories/CitiesRepository'
-import AppError from '@shared/errors/AppError';
+import CitiesRepository from '../../../modules/cities/repositories/CitiesRepository'
+
+import AppError from '../../../shared/errors/AppError';
 
 class ListCitiesService {
 

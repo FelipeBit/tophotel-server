@@ -1,5 +1,5 @@
-import amadeus from '@config/amadeus'
-import AppError from '@shared/errors/AppError';
+import amadeus from '../../../config/amadeus'
+import AppError from '../../../shared/errors/AppError';
 
 class ListHotelsService {
 

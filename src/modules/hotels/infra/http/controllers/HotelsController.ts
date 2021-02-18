@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 
-import ListHotelsService from '@modules/hotels/services/ListHotelsService'
-import FindHotelByIdService from '@modules/hotels/services/FindHotelByIdService'
+import ListHotelsService from '../../../../../modules/hotels/services/ListHotelsService'
+import FindHotelByIdService from '../../../../../modules/hotels/services/FindHotelByIdService'
 
 export default class HotelsController {
 

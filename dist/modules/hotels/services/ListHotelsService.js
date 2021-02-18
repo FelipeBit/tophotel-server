@@ -12,8 +12,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const amadeus_1 = __importDefault(require("@config/amadeus"));
-const AppError_1 = __importDefault(require("@shared/errors/AppError"));
+const amadeus_1 = __importDefault(require("../../../config/amadeus"));
+const AppError_1 = __importDefault(require("../../../shared/errors/AppError"));
 class ListHotelsService {
     execute(query) {
         return __awaiter(this, void 0, void 0, function* () {

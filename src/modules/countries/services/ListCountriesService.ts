@@ -1,5 +1,5 @@
-import CountriesRepository from '@modules/countries/repositories/CountriesRepository'
-import AppError from '@shared/errors/AppError';
+import CountriesRepository from '../../../modules/countries/repositories/CountriesRepository'
+import AppError from '../../../shared/errors/AppError';
 
 class ListCountriesService {
 

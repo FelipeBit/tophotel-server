@@ -12,8 +12,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const CreateCountriesService_1 = __importDefault(require("@modules/countries/services/CreateCountriesService"));
-const ListCountriesService_1 = __importDefault(require("@modules/countries/services/ListCountriesService"));
+const CreateCountriesService_1 = __importDefault(require("../../../../../modules/countries/services/CreateCountriesService"));
+const ListCountriesService_1 = __importDefault(require("../../../../../modules/countries/services/ListCountriesService"));
 class CountriesController {
     create(request, response) {
         return __awaiter(this, void 0, void 0, function* () {

@@ -1,4 +1,4 @@
-import { Country, CountryModel } from '@modules/countries/entities/Country'
+import { Country, CountryModel } from '../../../modules/countries/entities/Country'
 
 class CountriesRepository {
     public async createRepository(country: any): Promise<CountryModel | null> {

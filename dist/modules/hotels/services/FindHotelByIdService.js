@@ -13,7 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const dotenv_1 = __importDefault(require("dotenv"));
-const amadeus_1 = __importDefault(require("@config/amadeus"));
+const amadeus_1 = __importDefault(require("../../../config/amadeus"));
 dotenv_1.default.config();
 class FindHotelByIdService {
     constructor(hotelId) {

@@ -1,8 +1,8 @@
 import dotenv from 'dotenv'
 
-import accuweather from '@config/accuweather'
-import amadeus from '@config/amadeus'
-import AppError from '@shared/errors/AppError'
+import accuweather from '../../../config/accuweather'
+import amadeus from '../../../config/amadeus'
+import AppError from '../../../shared/errors/AppError'
 
 interface HotelInfo {
     info: any,

@@ -12,8 +12,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const AppError_1 = __importDefault(require("@shared/errors/AppError"));
-const CitiesRepository_1 = __importDefault(require("@modules/cities/repositories/CitiesRepository"));
+const AppError_1 = __importDefault(require("../../../shared/errors/AppError"));
+const CitiesRepository_1 = __importDefault(require("../../../modules/cities/repositories/CitiesRepository"));
 class CreateCitiesService {
     constructor(city) {
         this.city = city;

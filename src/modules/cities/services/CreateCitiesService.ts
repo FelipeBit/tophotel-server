@@ -1,6 +1,6 @@
-import AppError from '@shared/errors/AppError'
-import CityRequestDTO from '@modules/cities/dtos/CityRequestDTO'
-import CitiesRepository from '@modules/cities/repositories/CitiesRepository'
+import AppError from '../../../shared/errors/AppError'
+import CityRequestDTO from '../../../modules/cities/dtos/CityRequestDTO'
+import CitiesRepository from '../../../modules/cities/repositories/CitiesRepository'
 
 class CreateCitiesService {
     private city: CityRequestDTO

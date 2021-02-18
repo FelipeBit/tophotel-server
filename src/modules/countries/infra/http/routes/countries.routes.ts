@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import CountriesController from '@modules/countries/infra/http/controllers/CountriesController'
+import CountriesController from '../../../../../modules/countries/infra/http/controllers/CountriesController'
 
 const countriesRouter = Router()
 const countriesController = new CountriesController()

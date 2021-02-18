@@ -1,4 +1,4 @@
-import { City, CityModel } from '@modules/cities/entities/City'
+import { City, CityModel } from '../../../modules/cities/entities/City'
 
 class CitiesRepository {
     public async createRepository(city: any): Promise<CityModel | null> {

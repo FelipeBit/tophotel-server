@@ -1,6 +1,6 @@
-import AppError from '@shared/errors/AppError'
-import CountryRequestDTO from '@modules/countries/dtos/CountryRequestDTO'
-import CountriesRepository from '@modules/countries/repositories/CountriesRepository'
+import AppError from '../../../shared/errors/AppError'
+import CountryRequestDTO from '../../../modules/countries/dtos/CountryRequestDTO'
+import CountriesRepository from '../../../modules/countries/repositories/CountriesRepository'
 
 class CreateCountriesService {
     private country: CountryRequestDTO
