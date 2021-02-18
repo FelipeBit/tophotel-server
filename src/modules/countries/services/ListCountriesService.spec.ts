@@ -1,10 +1,8 @@
-import ListCountriesService from './ListCountriesService'
+import MockListCountriesRepository from './mocks/MockListCountriesRepository'
 
-describe('CreateCities', () => {
+describe('ListCountries', () => {
 
     it('Should be able to list the countries', () => {
-        expect(1 + 1).toBe(2)
+
     })
-
-
 })

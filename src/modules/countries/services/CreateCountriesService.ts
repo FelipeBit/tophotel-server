@@ -12,12 +12,6 @@ class CreateCountriesService {
     public async execute() {
         try {
             const countriesRepository = new CountriesRepository()
-            //const countryFound = await countriesRepository.findRepository(this.country)
-
-            //if (countryFound) {
-            //    throw new AppError('Country already exists', 401);
-            //}
-
             const createdCountry = await countriesRepository.createRepository(this.country)
 
             if (!createdCountry) {

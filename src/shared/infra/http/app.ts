@@ -11,22 +11,17 @@ import * as swaggerDocument from '@shared/infra/documentation/swagger.json'
 
 import routes from '@shared/infra/http/routes';
 
-try {
-    dotenv.config()
-    const { MONGO_ATLAS_USER, MONGO_ATLAS_PASSWORD, MONGO_ATLAS_DB } = process.env
 
-    const mongoAtlasURI = `mongodb+srv://${MONGO_ATLAS_USER}:${MONGO_ATLAS_PASSWORD}@tui.upyog.mongodb.net/${MONGO_ATLAS_DB}?retryWrites=true&w=majority`
+dotenv.config()
+const { MONGO_ATLAS_USER, MONGO_ATLAS_PASSWORD, MONGO_ATLAS_DB } = process.env
 
-    mongoose.connect(
-        mongoAtlasURI,
-        { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true },
-        () => console.log(" Mongoose is connected")
-    );
+const mongoAtlasURI = `mongodb+srv://${MONGO_ATLAS_USER}:${MONGO_ATLAS_PASSWORD}@tui.upyog.mongodb.net/${MONGO_ATLAS_DB}?retryWrites=true&w=majority`
 
-} catch (e) {
-    console.log("could not connect");
-}
-console.log(path.join(__dirname, './', 'public'))
+mongoose.connect(
+    mongoAtlasURI,
+    { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true },
+    () => console.log(" Mongoose is connected")
+);
 
 const app = express()
 app.use(express.static(path.join(__dirname, '../', 'public')));

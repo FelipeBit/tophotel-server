@@ -6,11 +6,9 @@ import FindHotelByIdService from '@modules/hotels/services/FindHotelByIdService'
 export default class HotelsController {
 
     public async list(request: Request, response: Response): Promise<Response> {
-        console.log('QUERY=>', request.query)
         const {
             cityCode,
             adults,
-            amenities,
             priceRange,
             bestRateOnly,
             sort,
@@ -33,13 +31,11 @@ export default class HotelsController {
             bestRateOnly: bestRateOnly || true,
             view: 'FULL',
             sort: sort || 'NONE',
-            //amenities: amenities || [],
             ratings: ratingsNumber || [1, 2, 3, 4, 5],
             priceRange: priceRange || '0-99999',
             //'page[limit]': pagelimit || 10,
             //'page[offset]': pageoffset || 0,
             currency: 'EUR',
-            //lang
         })
 
         return response.json(hotels)
@@ -47,11 +43,6 @@ export default class HotelsController {
 
     public async findById(request: Request, response: Response): Promise<Response> {
         const { hotelId } = request.params
-
-        //adults=2&
-        //roomQuantity=1&
-        //paymentPolicy=NONE&view=FULL_ALL_IMAGES
-
         const findHotelByIdService = new FindHotelByIdService(hotelId)
         const hotel = await findHotelByIdService.execute()
 
