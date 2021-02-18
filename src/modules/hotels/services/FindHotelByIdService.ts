@@ -27,7 +27,7 @@ class FindHotelByIdService {
 
     public async execute() {
         try {
-            const infoResult = await amadeus.shopping.hotelOffersByHotel.get({ hotelId: this.hotelId })
+            const infoResult = await amadeus.shopping.hotelOffersByHotel.get({ hotelId: this.hotelId, currency: 'EUR' })
             this.hotelInfo.info = infoResult.data
 
             const latitude = infoResult.data.hotel.latitude
