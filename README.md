@@ -11,13 +11,14 @@
 ## Routes
 
 - /countries
- * POST:
- * GET
+  * POST:
+  * GET
  
 - /cities
- * POST
- * GET
+  * POST
+  * GET
  
 - /hotels
- * GET
+  * GET
+  * 
 readme.md file under construction ...
