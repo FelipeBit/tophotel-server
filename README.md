@@ -12,13 +12,13 @@
 
 - /countries
   * POST:
-  * GET
+  * GET:
  
 - /cities
-  * POST
-  * GET
+  * POST:
+  * GET:
  
 - /hotels
-  * GET
-  * 
+  * GET:
+  
 readme.md file under construction ...
